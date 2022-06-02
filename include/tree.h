@@ -10,7 +10,6 @@ class Tree {
   std::vector<Node*> leaf;
   };
   Node* root;
-  std::vector<std::string> Perm;
   void createTree(Node* root, std::vector<char> cyc) {
     if (!cyc.size())
       return;
