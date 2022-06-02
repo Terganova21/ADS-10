@@ -24,7 +24,7 @@ class Tree {
     for (size_t l = 0; l < cyc.size(); l++)
       root->leaf.push_back(new Node());
     for (size_t l = 0; l < root->leaf.size(); l++)
-      root->leaf[l]->value = cycle[l];
+      root->leaf[l]->value = cyc[l];
     for (size_t l = 0; l < root->leaf.size(); l++)
       createTree(root->leaf[l], cyc);
   }
@@ -37,7 +37,7 @@ class Tree {
     if (root->value != '*')
       symbol += root->value;
     for (size_t l = 0; l < root->leaf.size(); l++)
-      permutation(root->leaf[l], symbol);
+      perm(root->leaf[l], symbol);
   }
 
  public:
