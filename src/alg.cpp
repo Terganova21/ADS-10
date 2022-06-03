@@ -8,8 +8,8 @@
 std::vector<char> getPerm(const Tree& tree, int n) {
 std::string origin = tree[n - 1];
 std::vector<char> prm;
-for (int l = 0; l < origin.length(); l++) {
-prm.push_back(origin[l]);
+for (int k = 0; k < origin.length(); k++) {
+prm.push_back(origin[k]);
 }
 return prm;
 }
