@@ -51,5 +51,5 @@ class Tree {
       createTree(root, value);
       perm(root);
     }
-}
+};
 #endif  // INCLUDE_TREE_H_
